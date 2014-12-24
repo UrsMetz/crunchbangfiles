@@ -59,7 +59,7 @@ fi
 xscreensaver -no-splash &
 
 ## Start Clipboard manager
-(sleep 3s && clipit) &
+# (sleep 3s && clipit) &
 
 ## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
 ## Adjust the values according to your preferances.
@@ -70,11 +70,11 @@ xset b off &
 
 ## The following command runs hacks and fixes for #! LiveCD sessions.
 ## Safe to delete after installation.
-cb-cowpowers &
+#cb-cowpowers &
 
 ## cb-welcome - post-installation script, will not run in a live session and
 ## only runs once. Safe to remove.
-(sleep 10s && cb-welcome --firstrun) &
+#(sleep 10s && cb-welcome --firstrun) &
 
 ## cb-fortune - have Waldorf say a little adage
 #(sleep 120s && cb-fortune) &
