@@ -344,6 +344,9 @@
         <command>~/.config/dmenu/dmenu-bind.sh</command>
       </action>
     </keybind>
+    <keybind key="A-F12">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
     <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
