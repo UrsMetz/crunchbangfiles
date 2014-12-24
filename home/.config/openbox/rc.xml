@@ -188,51 +188,68 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-
-  <!-- Keybindings for desktop switching -->
-  <keybind key="C-A-Left">
-    <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="C-A-Right">
-    <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="C-A-Up">
-    <action name="GoToDesktop"><to>up</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="C-A-Down">
-    <action name="GoToDesktop"><to>down</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="S-A-Left">
-    <action name="SendToDesktop"><to>left</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="S-A-Right">
-    <action name="SendToDesktop"><to>right</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="S-A-Up">
-    <action name="SendToDesktop"><to>up</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="S-A-Down">
-    <action name="SendToDesktop"><to>down</to><wrap>no</wrap></action>
-  </keybind>
-  <keybind key="W-F1">
-    <action name="GoToDesktop"><to>1</to></action>
-  </keybind>
-  <keybind key="W-F2">
-    <action name="GoToDesktop"><to>2</to></action>
-  </keybind>
-  <keybind key="W-F3">
-    <action name="GoToDesktop"><to>3</to></action>
-  </keybind>
-  <keybind key="W-F4">
-    <action name="GoToDesktop"><to>4</to></action>
-  </keybind>
-  <keybind key="W-d">
-    <action name="ToggleShowDesktop"/>
-  </keybind>
-
+    <!-- Keybindings for desktop switching -->
+    <keybind key="W-Left">
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-A-Left">
+      <action name="SendToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-A-Right">
+      <action name="SendToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-A-Up">
+      <action name="SendToDesktop">
+        <to>up</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-A-Down">
+      <action name="SendToDesktop">
+        <to>down</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-F1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-F2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-F3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-F4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
@@ -257,59 +274,57 @@
         <command>scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; viewnior ~/images/$f'</command>
       </action>
     </keybind>
-
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
-      <finalactions>
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </finalactions>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
       </action>
     </keybind>
-  <keybind key="A-S-Tab">
-    <action name="PreviousWindow">
-      <finalactions>
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </finalactions>
-    </action>
-  </keybind>
-  <keybind key="C-A-Tab">
-    <action name="NextWindow">
-      <panels>yes</panels><desktop>yes</desktop>
-      <finalactions>
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </finalactions>
-    </action>
-  </keybind>
-
-  <!-- Keybindings for window switching with the arrow keys -->
-  <keybind key="W-S-Right">
-    <action name="DirectionalCycleWindows">
-      <direction>right</direction>
-    </action>
-  </keybind>
-  <keybind key="W-S-Left">
-    <action name="DirectionalCycleWindows">
-      <direction>left</direction>
-    </action>
-  </keybind>
-  <keybind key="W-S-Up">
-    <action name="DirectionalCycleWindows">
-      <direction>up</direction>
-    </action>
-  </keybind>
-  <keybind key="W-S-Down">
-    <action name="DirectionalCycleWindows">
-      <direction>down</direction>
-    </action>
-  </keybind>
-
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="C-A-Tab">
+      <action name="NextWindow">
+        <panels>yes</panels>
+        <desktop>yes</desktop>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <!-- Keybindings for window switching with the arrow keys -->
+    <keybind key="W-S-Right">
+      <action name="DirectionalCycleWindows">
+        <direction>right</direction>
+      </action>
+    </keybind>
+    <keybind key="W-S-Left">
+      <action name="DirectionalCycleWindows">
+        <direction>left</direction>
+      </action>
+    </keybind>
+    <keybind key="W-S-Up">
+      <action name="DirectionalCycleWindows">
+        <direction>up</direction>
+      </action>
+    </keybind>
+    <keybind key="W-S-Down">
+      <action name="DirectionalCycleWindows">
+        <direction>down</direction>
+      </action>
+    </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="A-F2">
       <action name="Execute">
@@ -426,10 +441,10 @@
       </action>
     </keybind>
     <!-- A bit of tiling -->
-    <keybind key="W-Right">
+    <keybind key="C-W-Right">
       <action name="GrowToEdgeEast"/>
     </keybind>
-    <keybind key="W-Left">
+    <keybind key="C-W-Left">
       <action name="GrowToEdgeWest"/>
     </keybind>
     <keybind key="W-Down">
