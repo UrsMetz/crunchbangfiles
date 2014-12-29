@@ -465,12 +465,12 @@
     <keybind key="W-Up">
       <action name="GrowToEdgeNorth"/>
     </keybind>
-    <keybind key="W-A-Left">
+    <keybind key="C-W-A-Left">
       <action name="Execute">
         <command>cb-aerosnap --left</command>
       </action>
     </keybind>
-    <keybind key="W-A-Right">
+    <keybind key="C-W-A-Right">
       <action name="Execute">
         <command>cb-aerosnap --right</command>
       </action>
