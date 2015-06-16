@@ -30,10 +30,12 @@ hsetroot -solid "#2E3436" &
 ## 4. tint2 panel
 (\
 nitrogen --restore && \
-cb-compositor --start && \
 sleep 2s && \
 tint2 \
 ) &
+
+# start compositor after tint2 to avoid distorted icons
+(sleep 5s && cb-compositor --start) &
 
 ## Volume control for systray
 (sleep 2s && pnmixer) &
